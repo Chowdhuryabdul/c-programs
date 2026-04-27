@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char s[100004];
+    scanf("%s", &s);
+    int len = strlen(s);
+    for(int i = 0; i <len; i++){
+       if(s[i] == ',') {
+        s[i] = ' ';
+       }else if(s[i] >= 'A' && s[i] <= 'Z'){
+        s[i]+=32;
+       }else{
+        s[i]-=32;
+       }
+    }
+    printf("%s\n", s);
+    return 0;
+}
