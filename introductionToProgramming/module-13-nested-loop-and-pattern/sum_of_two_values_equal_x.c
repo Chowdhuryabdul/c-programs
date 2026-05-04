@@ -28,7 +28,9 @@ int main()
     }
     // printf("NO\n"); again after this, it prints NO, althhoug it prints YES. because we have set code like this. but we do not want such
 
-   /*  so the question is that where and when we can print NO?
+   /* 
+   USE OF FLAG
+   so the question is that where and when we can print NO?
     First of all, if the first condition is not correct for any times then we want to print NO. Not in any other case. 
     And another question how i can know from the outside of loop that the first condition have got true or not. so to track or reserve the result of the first condition. i need to use the flag variable, by which we can communicate from the outside of the loop to get to know the condition of the loop has got true or false. 
     when the condition is true then we will not print NO.
