@@ -29,7 +29,7 @@ int main()
     if(ret == 'N')
     
     {
-        printf("Positive\n");
+        printf("Negative\n");
     }
 
     // negative
@@ -37,7 +37,7 @@ int main()
     else if(ret == 'P')
     
     {
-        printf("Negative\n");
+        printf("Positive\n");
     }
 
 

@@ -8,6 +8,8 @@ int main()
     {
         scanf("%d", a[i]);
     }
+
+    
     int star = 1;
     int space = n-1;
     
