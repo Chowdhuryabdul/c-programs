@@ -32,7 +32,7 @@ int main()
     // karim.cgp = 2.5;
 
 
-    // if we need to take input
+    // if we need to take input- this is one way to do. but this is not shrot cut
 
     int r;
     int c;
@@ -40,10 +40,17 @@ int main()
     cin >> r >> c >> g;
     Student shakil (r, c, g);
 
+    // another way to do with input in this case we do not need to take the constructor
+    // Student mafij;
+    // cin >> mafij.roll >> mafij. cls >> mafij.cgp;
+
+
 
     cout << rahim.roll << " " << rahim.cls << " " << rahim.cgp << endl;
     cout << karim.roll << " " << karim.cls << " " << karim.cgp << endl;
     cout << shakil.roll << " " << shakil.cls << " " << shakil.cgp << endl;
+    // cout << mafij.roll << " " << mafij.cls << " " << mafij.cgp << endl;
+
 
     return 0;
 }
