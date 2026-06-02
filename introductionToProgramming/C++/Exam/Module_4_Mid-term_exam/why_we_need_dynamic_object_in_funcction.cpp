@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+    public:
+    int roll;
+    int cls;
+    double gpa;
+
+    Student(int roll, int cls, int gpa){
+       this->roll = roll;
+       (*this). cls = cls;
+       this->gpa = gpa;
+    }
+};
+
+Student* fun()
+{
+    Student karim(100, 11, 4.5); /* we have received this from the main function althoug it is static. it works as static variable. */
+
+    Student * p = &karim;
+    return p;
+};
+
+int main()
+{
+    Student rahim(45, 5, 3.3);
+
+    Student* p = fun();
+    
+    cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
+    cout << (*p).roll << " " << (*p).cls << " " << p->gpa << endl;
+
+
+    return 0;
+}
