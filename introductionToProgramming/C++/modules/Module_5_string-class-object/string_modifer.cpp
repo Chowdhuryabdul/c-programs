@@ -4,6 +4,8 @@ int main()
 {
     string s = "Hello world";
     string s2 = "Hi";
+   
+//    to concat
     // s +=s2;
     s.append(s2); /* we can also do this with append function, here mention that one which will added */
     
@@ -26,9 +28,13 @@ int main()
 
     s.erase(3, 2);
 
-    // to replace the part of string- here first one means where to start and 5 means how many will be deltted and than replace the world by Bangladesh
-    s.replace(6, 5, "Bangladesh");
+    // to replace the part of string- here first one means where to start and 5 means how many will be deleed and than replace the world by Bangladesh. but if i want not to delete anythig just insert bangladesh there. than i should say 0 in case of 5.
+    // s.replace(6, 5, "Bangladesh");
+    s.replace(6, 0, "Bangladesh");
 
+    // to insert sth
+    // first parameter means to in which index it will start
+    s.insert(5, "piaysh");
 
     cout << s << endl;
 
@@ -36,3 +42,9 @@ int main()
 }
 
 // in char array we used to use concat() to add two string
+
+
+/* 1. assign function - we can also do this by +=
+2. erase function
+3. replace function
+4. insert function */
