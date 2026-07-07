@@ -14,7 +14,8 @@ class Node
 };
 
 // function to insert in head - why i am doing in function? this is because if i need to do this multiples time which we can do it by the function. whenever we need we will just call it.
-void insert_at_head(Node* &head, int val){ /* what is head? it is pointer of Node */
+
+void insert_at_head(Node* &head, int val){ /* what is head? it is pointer of Node */  /* O(1) */
 
     // create a new node
     Node* newNode = new Node(val);
@@ -63,3 +64,7 @@ int main()
     print_linked_list(head);
     return 0;
 }
+
+
+// complexity of code -
+// as there is no loop it means the complexity will be O(1)
