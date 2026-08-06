@@ -17,7 +17,6 @@ int main()
     //     st.pop();
     // }
  
-
     stack <int> st2;
     while(!st.empty()){
        
@@ -30,9 +29,5 @@ int main()
         cout << st2.top() << endl;
         st2.pop();
     }
-
-
-
-    
     return 0;
 }
