@@ -1,0 +1,10 @@
+n = int(input())
+numbers = list(map(int, input().split()))
+max = max(numbers)
+min = min(numbers)
+max_index = numbers.index(max)
+min_index = numbers.index(min)
+# print(min, min_index, max, max_index)
+number = numbers[min_index], numbers[max_index] = numbers[max_index], numbers[min_index]
+# print(number)
+print(*numbers)
